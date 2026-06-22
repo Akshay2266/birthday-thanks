@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akshay Thakare - Birthday Memories</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:linear-gradient(-45deg,#fff0f5,#fff8dc,#e6f7ff,#ffe4e1);background-size:400% 400%;animation:bg 15s ease infinite;overflow-x:hidden;color:#333}
+@keyframes bg{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:30px;position:relative}
+.card,.thank-card{background:rgba(255,255,255,.9);padding:45px;border-radius:28px;box-shadow:0 15px 40px rgba(0,0,0,.12)}
+.card{text-align:center;max-width:800px}
+.card h1{font-size:3rem}
+.card h2{color:#ff5f7e;margin:15px 0}
+.tag{color:#ff5f7e;font-weight:600}
+
+.balloon{position:absolute;font-size:38px;animation:float 12s linear infinite}
+@keyframes float{from{transform:translateY(100vh)}to{transform:translateY(-150px)}}
+
+.timeline{position:relative;max-width:1200px;margin:auto;padding:80px 0}
+.timeline:after{content:'';position:absolute;left:50%;top:0;bottom:0;width:5px;background:white}
+.container{position:relative;width:50%;padding:20px 40px}
+.left{left:0}.right{left:50%}
+.content{background:white;padding:12px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.12)}
+.content img{width:100%;display:block;border-radius:15px}
+.container:after{content:'❤️';position:absolute;top:35px;font-size:20px}
+.left:after{right:-10px}.right:after{left:-10px}
+
+.thankyou{padding:100px 20px}
+.thank-card{max-width:900px;margin:auto;text-align:center}
+.thank-card h2,.thank-card h3{color:#ff5f7e}
+.thank-card p{line-height:2;margin-top:10px}
+
+footer{text-align:center;padding:40px;font-size:1.1rem}
+
+.fade{opacity:0;transform:translateY(30px);transition:1s}
+.show{opacity:1;transform:none}
+
+.scroll-indicator{position:absolute;bottom:35px;left:50%;transform:translateX(-50%);text-align:center;color:#ff5f7e;font-weight:600;cursor:pointer}
+.scroll-indicator span{display:block;margin-bottom:10px;font-size:.95rem}
+.mouse-scroll{width:34px;height:55px;border:2px solid #ff5f7e;border-radius:20px;margin:auto;position:relative}
+.wheel{width:6px;height:10px;background:#ff5f7e;border-radius:10px;position:absolute;left:50%;top:8px;transform:translateX(-50%);animation:scrollWheel 1.6s infinite}
+@keyframes scrollWheel{0%{opacity:1;top:8px}100%{opacity:0;top:28px}}
+
+@media(max-width:768px){
+.timeline:after{left:20px}
+.container{width:100%;left:0;padding-left:60px;padding-right:20px}
+.container:after{left:7px}
+.card h1{font-size:2.2rem}
+}
+</style>
+</head>
+<body>
+
+<div class="balloon" style="left:10%">🎈</div>
+<div class="balloon" style="left:30%;animation-delay:2s">🎉</div>
+<div class="balloon" style="left:50%;animation-delay:4s">🎂</div>
+<div class="balloon" style="left:70%;animation-delay:1s">✨</div>
+<div class="balloon" style="left:90%;animation-delay:3s">🎈</div>
+
+<section class="hero">
+<div class="card fade">
+<h1>🎂 Birthday Memories</h1>
+<h2>अक्षय ठाकरे</h2>
+<p class="tag">प्रत्येक शुभेच्छा, आशीर्वाद आणि आठवणींसाठी मनःपूर्वक आभार ✨</p>
+<br>
+<p><b>जन्मतारीख :</b> २२ जून २००६</p>
+<p><b>गाव :</b> कुपखेडा</p>
+<p><b>मुक्काम पोस्ट :</b> bडोदे</p>
+<br>
+<p><b>२२ जून २००६ → २२ जून २०२६</b></p>
+<p>20 Years • Countless Memories • Endless Blessings ❤️</p>
+<p>20 Years of Memories ❤️</p>
+</div>
+
+<div class="scroll-indicator" onclick="document.querySelector('.timeline').scrollIntoView({behavior:'smooth'})">
+<span>Scroll Down</span>
+<div class="mouse-scroll"><div class="wheel"></div></div>
+</div>
+</section>
+
+<section class="timeline">
+<div class="container left fade"><div class="content"><img src="loudspeaker-didi.png"></div></div>
+<div class="container right fade"><div class="content"><img src="mom-a.png"></div></div>
+<div class="container left fade"><div class="content"><img src="big-mami-thane.png"></div></div>
+<div class="container right fade"><div class="content"><img src="kapil-mama.png"></div></div>
+<div class="container left fade"><div class="content"><img src="mami-khamtane.png"></div></div>
+<div class="container right fade"><div class="content"><img src="pravin-dada.png"></div></div>
+</section>
+
+<section class="thankyou">
+<div class="thank-card fade">
+<h2>❤️ Thank You ❤️</h2>
+<h3>मराठी</h3>
+<p>माझ्या वाढदिवसानिमित्त दिलेल्या शुभेच्छांसाठी आणि गेल्या २० वर्षांमध्ये मला दिलेल्या सुंदर आठवणींसाठी तुमच्या सर्वांचे मनःपूर्वक आभार. ❤️<br><br>
+तुमच्या शुभेच्छांमुळे माझा आजचा दिवस खरोखरच खास बनला. तसेच, तुम्हालाही सुख आणि उत्तम आरोग्य लाभो ही शुभेच्छा.<br><br>
+पुन्हा एकदा सर्वांचे मनःपूर्वक धन्यवाद, आणि लवकरच भेटूया! 😊🙏</p>
+
+<h3 style="margin-top:30px">In English</h3>
+<p>Thank you everyone for all your happy wishes and for giving me so many happy memories over the last 20 years. ❤️<br><br>
+Your wishes truly made my day special. Wishing you all happiness and good health as well.<br><br>
+Thank you all once again, and see you all soon! 😊🙏</p>
+</div>
+</section>
+
+<footer>With Love ❤️<br>— Akshay Thakare</footer>
+
+<script>
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}));
+document.querySelectorAll('.fade').forEach(x=>obs.observe(x));
+</script>
+</body>
+</html>
